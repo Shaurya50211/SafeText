@@ -6,4 +6,4 @@ In SafeText you can save data to your UserDefaults. To access that data you have
 
 ## Demo
 
-https://user-images.githubusercontent.com/74823287/192113069-f5ebce2a-9753-4282-a0bf-f8dcdd44e254.mp4
+![Simulator Screen Recording - iPhone 14 Pro Max - 2022-09-25 at 12 59 53](https://user-images.githubusercontent.com/74823287/192155758-389eccd2-d770-4015-8ee2-698736b597a1.gif)
