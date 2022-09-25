@@ -13,13 +13,14 @@ struct ContentView: View {
     // Change this to false after
     @State private var isUnlocked = false
     @AppStorage("info") private var confidencialInfo = ""
+    @AppStorage("needAuth") private var needAuth = true
     @State private var presentAlert = false
     var body: some View {
         ZStack {
             Color(UIColor(red: 1.00, green: 0.98, blue: 0.90, alpha: 1.00))
                 .ignoresSafeArea()
             VStack {
-                if isUnlocked == false {
+                if isUnlocked == false && needAuth == true {
                     NavigationStack {
                         // MARK: Title
                         VStack(alignment: .leading) {
@@ -83,10 +84,10 @@ struct ContentView: View {
                     withAnimation(.easeInOut) {
                         NavigationStack {
                             VStack {
-                                Text("Confidential info goes here:")
-                                    .foregroundColor(.black.opacity(0.7))
-                                    .padding(.bottom, -40)
-                                    .padding(.leading, -130)
+                                    Text("Your text goes here:")
+                                        .foregroundColor(.black.opacity(0.7))
+                                        .padding(.bottom, -40)
+                                        .padding(.leading, -130)
                                 
                                 TextEditor(text: $confidencialInfo)
                                     .scrollContentBackground(.hidden)
@@ -118,6 +119,12 @@ struct ContentView: View {
                                 .padding(.vertical, 10)
                                 .background(.blue)
                                 .cornerRadius(5)
+                                
+                                Toggle("Ask for biometry next time?", isOn: $needAuth)
+                                    .padding(.horizontal, 70)
+                                    .padding(.top, 15)
+                                    .font(.headline)
+                                    .fontWeight(.medium)
                             }
                         }
                         .background(.blue)
