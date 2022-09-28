@@ -18,10 +18,6 @@ struct Authentication {
         let reason = "Authentication is required to continue."
         if localAuthenticationContext.canEvaluatePolicy(LAPolicy.deviceOwnerAuthentication, error: &authorizationError) {
             
-            // Which biometry is supported?
-            let biometricType = localAuthenticationContext.biometryType == LABiometryType.faceID ? "Face ID" : "Touch ID"
-            print("\(biometricType) is supported")
-            
             localAuthenticationContext.evaluatePolicy(LAPolicy.deviceOwnerAuthentication, localizedReason: reason) { (success, evaluationError) in
                 if success {
                     // Set isUnlocked to true so that we can switch screens

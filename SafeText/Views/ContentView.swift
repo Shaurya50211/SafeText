@@ -29,13 +29,12 @@ struct ContentView: View {
                     ConfidencialInfoView(isUnlocked: $isUnlocked, needAuth: $needAuth, presentAlert: $presentAlert, confidencialInfo: $confidencialInfo)
                 }
             }
-            
         }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
