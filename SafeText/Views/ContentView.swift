@@ -10,7 +10,6 @@ import Lottie
 import LocalAuthentication
 
 struct ContentView: View {
-    // Change this to false after
     @State private var isUnlocked = false
     @AppStorage("info") private var confidencialInfo = ""
     @AppStorage("needAuth") private var needAuth = true
