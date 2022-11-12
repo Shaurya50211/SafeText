@@ -25,19 +25,30 @@ struct HomepageView: View {
             }
             LottieAnimationView(animationName: "secure", loopMode: .loop)
                 .frame(width: 400, height: 400)
-            Button {
-                // MARK: Authenticate User
-                Authentication(isUnlocked: $isUnlocked).Authenticate()
-            } label: {
-                // MARK: Auth button label
-                Text("Authenticate")
-                    .font(.title3)
-                    .foregroundColor(.white)
-                    .padding(.horizontal, 100)
-                    .padding(.vertical, 10)
+            HStack {
+                Button {
+                    // MARK: Authenticate User
+                    Authentication(isUnlocked: $isUnlocked).Authenticate()
+                } label: {
+                    // MARK: Auth button label
+                    Text("Authenticate")
+                        .font(.title2)
+                        .foregroundColor(.white)
+                        .padding(.horizontal,90)
+                        .padding(.vertical, 10)
+                }
+                .background(.blue)
+                .cornerRadius(5)
+                
+                NavigationLink {
+                    Tips()
+                } label: {
+                    Image(systemName: "questionmark.square.fill")
+                        .font(.system(size: 45))
+                        .foregroundColor(.yellow)
+                }
+                
             }
-            .background(.blue)
-            .cornerRadius(5)
         }
         .background(.blue)
         .scrollContentBackground(.hidden)
@@ -45,3 +56,10 @@ struct HomepageView: View {
         .toolbarColorScheme(.light, for: .navigationBar)
     }
 }
+
+struct HomepageView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomepageView(isUnlocked: Binding.constant(true))
+    }
+}
+

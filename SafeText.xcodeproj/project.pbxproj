@@ -18,6 +18,8 @@
 		D94FBCC128E0E8FF00FDC333 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FBCC028E0E8FF00FDC333 /* Authentication.swift */; };
 		D95F9E7428DF2E5600094165 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D95F9E7328DF2E5600094165 /* Lottie */; };
 		D95F9E7728DF2E9800094165 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D95F9E7628DF2E9800094165 /* IQKeyboardManagerSwift */; };
+		D963B4F62920261D00842C40 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D963B4F52920261D00842C40 /* CardView.swift */; };
+		D9B69C21291F10A700F64FBC /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B69C20291F10A700F64FBC /* Tips.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		D94FBCBA28E0E73700FDC333 /* ConfidencialInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfidencialInfoView.swift; sourceTree = "<group>"; };
 		D94FBCBE28E0E86800FDC333 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
 		D94FBCC028E0E8FF00FDC333 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		D963B4F52920261D00842C40 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D9B69C20291F10A700F64FBC /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			children = (
 				D90206E828DBA69600EC64C3 /* ContentView.swift */,
 				D94FBCBE28E0E86800FDC333 /* HomepageView.swift */,
+				D9B69C20291F10A700F64FBC /* Tips.swift */,
+				D963B4F52920261D00842C40 /* CardView.swift */,
 				D94FBCBA28E0E73700FDC333 /* ConfidencialInfoView.swift */,
 				D90206F928DBB27800EC64C3 /* LottieView.swift */,
 			);
@@ -193,7 +199,9 @@
 				D90206E728DBA69600EC64C3 /* SafeTextApp.swift in Sources */,
 				D94FBCBB28E0E73700FDC333 /* ConfidencialInfoView.swift in Sources */,
 				D94FBCBF28E0E86800FDC333 /* HomepageView.swift in Sources */,
+				D9B69C21291F10A700F64FBC /* Tips.swift in Sources */,
 				D90206FA28DBB27800EC64C3 /* LottieView.swift in Sources */,
+				D963B4F62920261D00842C40 /* CardView.swift in Sources */,
 				D94FBCC128E0E8FF00FDC333 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
